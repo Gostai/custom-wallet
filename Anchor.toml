@@ -1,0 +1,14 @@
+[features]
+seeds = false
+[programs.localnet]
+custom_wallet = "6D3CSu8PQd7R9k7SD9rMNLCCVFzsgJ8CVGhckpANTqKi"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "localnet"
+wallet = "id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
